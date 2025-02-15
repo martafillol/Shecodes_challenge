@@ -8,6 +8,13 @@
   <title>SheCodes Challenge Marta Fillol</title>
   <style>
 
+    h1{
+      color: white;
+      font-size: 15px;
+      font-family:Arial, sans-serif;
+    }
+
+
     h2 {
       font-family:Arial, sans-serif;
       font-style: italic;
@@ -20,8 +27,10 @@
     }
 
     .top_bar {
-      font-size: 10px;
       font-family:Arial, sans-serif;
+      background-color: black;
+      padding-top: 10px;
+      padding-bottom: 10px;
         }
 
 
@@ -64,7 +73,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 80px;
+      margin-top: 60px;
     }
 
     .image-container img {
@@ -103,19 +112,19 @@
     /* Floating Quote Block */
 
     .floating-quote {
-      margin-top: 80px;
+      margin-top:90px;
       position: absolute;
       background-color: white;
-      padding: 40px 30px;
       width: 80%;
-      height: 150px;
+      padding-left: 80px;
+      height: 270px;
       left: 20%;
       top: 100%;
       transform: translateY(-50%);
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 0px;
       border-color: black;
-      border: 3px solid black;  /* Black border */
+      border: 1px solid black;  /* Black border */
       /*border-radius: 0px;  /* Optional: rounded corners */
       box-shadow: 0px 0px 0px black; /* Adds a cool shadow effect */
       max-width: 60%; /* Adjust width if needed */
@@ -136,6 +145,7 @@
       */
 
     .quote-text {
+      margin-top:90px;
       font-size: 1.4rem;
       font-style: italic;
       color: #222;
@@ -143,7 +153,36 @@
     }
 
 
+    .butterfly_small {
+      position: absolute; /* Position absolutely within the floating-quote */
+      top: -80px; /* Adjust this value to move the butterfly up or down */
+      right: -50px; /* Adjust this value to move the butterfly left or right */
+      z-index: 10; /* Ensure the butterfly is above other elements */
+    }
+
+    .butterfly_small img {
+      height: 200px; /* Adjust the size of the butterfly */
+      rotate: 25deg; /* Rotate the butterfly */
+      background-color: transparent; /* Ensure no background */
+    }
+
+    /* .butterfly_small img{
+      position: absolute;
+      height: 200px;
+      rotate: -25deg;
+      background-color: transparent
+    }
+
     /* SECOND QUOTE SECTION */
+
+    .butterfly_big img {
+      position: absolute;
+      height: 700px;
+      rotate: -25deg;
+      background-color: transparent;
+      top: 1000px;
+      right: 900px
+    }
 
     .quote-section_2 {
 
@@ -180,13 +219,13 @@
 
     .quote-container_2 blockquote {
       display: inline-block;
-      writing-mode: vertical-lr;
       text-align: left;
       font-size: 50px;
       text-orientation: sideways;
-      transform: rotate(180deg);
-      margin-left: 550px;
-      padding-bottom: 450px;
+      transform: rotate(-90deg);
+      margin-left: 250px;
+      padding-right: 400px;
+      font-style: normal;
         }
     .image-container_2 {
       flex: 1;
@@ -233,18 +272,35 @@
   </div>
 </section>
 
+
+
+
 <!-- Floating Quote Block -->
 
 <div class="floating-quote">
+
+<div class="butterfly_small">
+  <a
+    href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
+    <img class="photo3" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Monarch Butterfly Transformation.png">
+  </a>
+</div>
   <p class="quote-text">
-    "The only way to do great work is to love what you do."
+    "The degree to which a person can grow is directly proportional to the amount of truth they can accept about themselves without running away"
   </p>
-  <cite class="quote-citation">- Steve Jobs</cite>
+</div>
+
+<div class="butterfly_big">
+  <a
+    href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
+    <img class="photo3" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Monarch Butterfly Transformation.png">
+  </a>
 </div>
 
 <!-- SECOND QUOTE -->
 
 <section class="quote-section_2">
+
   <div class="quote-container_2">
     <blockquote>
       "DEEP RIVERS <br> RUN QUIET"
@@ -333,3 +389,14 @@
 
 </body>
 </html>
+
+
+<!--
+
+
+<div class="floating-quote">
+  <p class="quote-text">
+    "The degree to which a person can grow is directly proportional to the amount of truth they can accept about themselves without running away"
+  </p>
+  <cite class="quote-citation">- Steve Jobs</cite>
+</div>-->
