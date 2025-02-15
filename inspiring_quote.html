@@ -4,10 +4,275 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <title>SheCodes Challenge Marta Fillol</title>
+  <style>
+
+    h2 {
+      font-family:Arial, sans-serif;
+      font-style: italic;
+      font-size: 30px;
+
+    }
+    h3 {
+      font-family:"Cookie";
+      font-size: 50px;
+    }
+
+    .top_bar {
+      font-size: 10px;
+      font-family:Arial, sans-serif;
+        }
+
+
+    .container_1 {
+      display:block
+
+    }
+    .photo1 {
+      float: left;
+      flex:  80% 0 0;
+      margin-block-start: 0px;
+      margin-left: 0;
+    }
+
+    .first_quote {
+      text-align: center;
+      margin-left: 10px;
+      width: 362px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .quote-section {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .image-container_1 {
+      flex: 1;
+      /* Optional background background-color: #f0f0f0;  /* Optional background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .quote-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      /* Optional background background-color: #fafafa;  /* Optional background */
+
+    }
+
+    blockquote {
+      font-style: italic;
+      font-size: 1.5rem;
+      margin: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    cite {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+
+
+    /* Floating Quote Block */
+
+    .floating-quote {
+      margin-top: 80px;
+      position: absolute;
+      background-color: white;
+      padding: 40px 30px;
+      width: 80%;
+      height: 150px;
+      left: 20%;
+      top: 100%;
+      transform: translateY(-50%);
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 0px;
+      border-color: black;
+      border: 3px solid black;  /* Black border */
+      /*border-radius: 0px;  /* Optional: rounded corners */
+      box-shadow: 0px 0px 0px black; /* Adds a cool shadow effect */
+      max-width: 60%; /* Adjust width if needed */
+    }
+
+    /*
+    .floating-quote::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      width: 40px;
+      height: 40px;
+      background: white;
+      z-index: -1;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+      */
+
+    .quote-text {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #222;
+      max-width: 80%;
+    }
+
+
+    /* SECOND QUOTE SECTION */
+
+    .quote-section_2 {
+
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100vh;
+      align-items: center;  /* Center items vertically */
+      justify-content: space-between; /* Ensures equal spacing */
+
+    }
+    .quote-container_2 {
+
+      flex: 1;
+      display: flex;
+      justify-content: flex-start; /* Moves text closer to the image */
+      align-items: center;
+      text-align: center;
+      padding-top: 100px;
+      background-color: white;
+      max-width: 10%; /* Keeps it narrow */
+      max-height: 150px;
+      margin-right: 2%; /* Moves it closer to the image */
+
+      /* VERTICAL TEXT: Bottom to Top (Left to Right when rotated) */
+      /* writing-mode: vertical-rl; /* Ensures vertical text */
+      /* text-orientation: mixed; /* Keeps letters upright */
+      /* direction: ltr; /* Forces left-to-right reading */
+
+
+      line-height: 1.2;
+      white-space: nowrap; /* Prevents text wrapping */
+    }
+
+    .quote-container_2 blockquote {
+      display: inline-block;
+      writing-mode: vertical-lr;
+      text-align: left;
+      font-size: 50px;
+      text-orientation: sideways;
+      transform: rotate(180deg);
+      margin-left: 550px;
+      padding-bottom: 450px;
+        }
+    .image-container_2 {
+      flex: 1;
+      /* Optional background background-color: #f0f0f0;  /* Optional background */
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 50px;
+      margin-right: 0%;
+    }
+
+    .image-container_2 img {
+      max-width: 100%; /* Makes sure the image is responsive */
+      height: auto;
+  }
+
+  </style>
 </head>
+
+
 <body>
 
+<div class="top_bar">
+  <h1>
+    Most inspiring quote challenge by Marta Fillol
+  </h1>
+</div>
+
+<!-- FIRST QUOTE -->
+
+<section class="quote-section">
+  <div class="image-container_1">
+    <a
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
+      <img class="photo1" src="files/Imatge (1).jpeg">
+    </a>
+  </div>
+  <div class="quote-container">
+    <blockquote>
+      "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to
+      them. They went out and happened to things."
+    </blockquote>
+  </div>
+</section>
+
+<!-- Floating Quote Block -->
+
+<div class="floating-quote">
+  <p class="quote-text">
+    "The only way to do great work is to love what you do."
+  </p>
+  <cite class="quote-citation">- Steve Jobs</cite>
+</div>
+
+<!-- SECOND QUOTE -->
+
+<section class="quote-section_2">
+  <div class="quote-container_2">
+    <blockquote>
+      "DEEP RIVERS <br> RUN QUIET"
+    </blockquote>
+  </div>
+  <div class="image-container_2">
+    <a
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/642/original/Imatge_de_Pinterest_%281%29.jpeg?1739562681">
+      <img class="photo2" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Imatge de Pinterest (1).jpeg">
+    </a>
+  </div>
+
+</section>
+
+
+
+
+<div class="container_1">
+
+  <h2 class=first_quote>
+    "Edit your life frequently and ruthlessly. It's your masterpiece after all"
+  </h2>
+</div>
+
+ SECOND QUOTE
+
+
+<!--
   <h1>
     Most inspiring quote challenge by Marta Fillol
   </h1>
@@ -30,6 +295,41 @@
     "Speak your mind, even if your voice shakes"
   </h2>
 
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Quote Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="quote-section">
+        <div class="image-container">
+            <img src="your-image.jpg" alt="Descriptive Image">
+        </div>
+        <div class="quote-container">
+            <blockquote>
+                "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to them. They went out and happened to things."
+            </blockquote>
+            <cite>- Leonardo da Vinci</cite>
+        </div>
+    </section>
+
+     Floating Quote Block
+    <div class="floating-quote">
+        <p class="quote-text">
+            "The only way to do great work is to love what you do."
+        </p>
+        <cite class="quote-citation">- Steve Jobs</cite>
+    </div> -->
 
 </body>
 </html>
