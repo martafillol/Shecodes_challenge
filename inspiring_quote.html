@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,40 +8,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <title>SheCodes Challenge Marta Fillol</title>
   <style>
-
-    h1{
+    h1 {
       color: white;
       font-size: 15px;
-      font-family:Arial, sans-serif;
+      font-family: Arial, sans-serif;
     }
 
 
     h2 {
-      font-family:Arial, sans-serif;
+      font-family: Arial, sans-serif;
       font-style: italic;
       font-size: 30px;
 
     }
+
     h3 {
-      font-family:"Cookie";
+      font-family: "Cookie";
       font-size: 50px;
     }
 
     .top_bar {
-      font-family:Arial, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: black;
       padding-top: 10px;
       padding-bottom: 10px;
-        }
+    }
 
 
     .container_1 {
-      display:block
-
+      display: block
     }
+
     .photo1 {
       float: left;
-      flex:  80% 0 0;
+      flex: 80% 0 0;
       margin-block-start: 0px;
       margin-left: 0;
     }
@@ -112,7 +113,7 @@
     /* Floating Quote Block */
 
     .floating-quote {
-      margin-top:90px;
+      margin-top: 90px;
       position: absolute;
       background-color: white;
       width: 80%;
@@ -124,10 +125,13 @@
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 0px;
       border-color: black;
-      border: 1px solid black;  /* Black border */
+      border: 1px solid black;
+      /* Black border */
       /*border-radius: 0px;  /* Optional: rounded corners */
-      box-shadow: 0px 0px 0px black; /* Adds a cool shadow effect */
-      max-width: 60%; /* Adjust width if needed */
+      box-shadow: 0px 0px 0px black;
+      /* Adds a cool shadow effect */
+      max-width: 60%;
+      /* Adjust width if needed */
     }
 
     /*
@@ -145,7 +149,7 @@
       */
 
     .quote-text {
-      margin-top:90px;
+      margin-top: 90px;
       font-size: 1.4rem;
       font-style: italic;
       color: #222;
@@ -154,16 +158,23 @@
 
 
     .butterfly_small {
-      position: absolute; /* Position absolutely within the floating-quote */
-      top: -80px; /* Adjust this value to move the butterfly up or down */
-      right: -50px; /* Adjust this value to move the butterfly left or right */
-      z-index: 10; /* Ensure the butterfly is above other elements */
+      position: absolute;
+      /* Position absolutely within the floating-quote */
+      top: -80px;
+      /* Adjust this value to move the butterfly up or down */
+      right: -50px;
+      /* Adjust this value to move the butterfly left or right */
+      z-index: 10;
+      /* Ensure the butterfly is above other elements */
     }
 
     .butterfly_small img {
-      height: 200px; /* Adjust the size of the butterfly */
-      rotate: 25deg; /* Rotate the butterfly */
-      background-color: transparent; /* Ensure no background */
+      height: 200px;
+      /* Adjust the size of the butterfly */
+      rotate: 25deg;
+      /* Rotate the butterfly */
+      background-color: transparent;
+      /* Ensure no background */
     }
 
     /* .butterfly_small img{
@@ -173,7 +184,7 @@
       background-color: transparent
     }
 
-    /* SECOND QUOTE SECTION */
+       /*---------------------------------------------------- SECOND QUOTE SECTION */
 
     .butterfly_big img {
       position: absolute;
@@ -190,22 +201,28 @@
       flex-direction: row;
       width: 100%;
       height: 100vh;
-      align-items: center;  /* Center items vertically */
-      justify-content: space-between; /* Ensures equal spacing */
+      align-items: center;
+      /* Center items vertically */
+      justify-content: space-between;
+      /* Ensures equal spacing */
 
     }
+
     .quote-container_2 {
 
       flex: 1;
       display: flex;
-      justify-content: flex-start; /* Moves text closer to the image */
+      justify-content: flex-start;
+      /* Moves text closer to the image */
       align-items: center;
       text-align: center;
       padding-top: 100px;
       background-color: white;
-      max-width: 10%; /* Keeps it narrow */
+      max-width: 10%;
+      /* Keeps it narrow */
       max-height: 150px;
-      margin-right: 2%; /* Moves it closer to the image */
+      margin-right: 2%;
+      /* Moves it closer to the image */
 
       /* VERTICAL TEXT: Bottom to Top (Left to Right when rotated) */
       /* writing-mode: vertical-rl; /* Ensures vertical text */
@@ -214,7 +231,8 @@
 
 
       line-height: 1.2;
-      white-space: nowrap; /* Prevents text wrapping */
+      white-space: nowrap;
+      /* Prevents text wrapping */
     }
 
     .quote-container_2 blockquote {
@@ -223,10 +241,11 @@
       font-size: 50px;
       text-orientation: sideways;
       transform: rotate(-90deg);
-      margin-left: 250px;
-      padding-right: 400px;
+      margin-left: 300px;
+      padding-right: 160px;
       font-style: normal;
-        }
+    }
+
     .image-container_2 {
       flex: 1;
       /* Optional background background-color: #f0f0f0;  /* Optional background */
@@ -239,9 +258,152 @@
     }
 
     .image-container_2 img {
-      max-width: 100%; /* Makes sure the image is responsive */
+      max-width: 100%;
+      /* Makes sure the image is responsive */
       height: auto;
+    }
+
+
+
+
+
+
+    /* ----------------------------------------------------THIRD QUOTE SECTION TRUE LOVE */
+
+    .kissing_image img {
+      position:absolute;
+      top:1750px
+
+    }
+
+    .floating-quote_2{
+
+      margin-top: 300px;
+      position: absolute;
+      background-color: white;
+      padding-left: 200px;
+      left: 45%;
+      top: 1800;
+
+    }
+    .quote-text_2 {
+      margin-top: 90px;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #222;
+    }
+
+    .sunflower {
+      position: absolute;
+      top: 600px;
+      left:200px
+    }
+
+    .sunflower img {
+      height: 800px;
+      rotate: -45deg;
+      background-color: transparent;
+    }
+
+
+        /* ----------------------------------------------------FINAL QUOTE SECTION  */
+
+
+
+    .quote-section_4 {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; /* Needed for absolute positioning of floating quote */
+      width: 100%;
+      height: 100vh;
+      top:1000px
   }
+
+  .image-container_4 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .image-container_4 img {
+    max-width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    padding-top: 320px;
+    padding-left: 200px;
+    margin-right: 90px;
+  }
+
+  /* Left image alignment */
+  .image-container_4 {
+      justify-content: flex-start;
+  }
+
+  /* Right image alignment */
+  .image-container_5 {
+      justify-content: flex-end;
+  }
+
+  /* Floating quote styling */
+  .quote-container_4 {
+      position: absolute;
+      background-color: white;
+      padding: 30px 40px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-style: italic;
+      font-weight: bold;
+      color: black;
+      max-width: 50%;
+      transform: translateY(-50%);
+      top: 50%;
+  }
+/*
+
+    .image-container_4 {
+      flex: 1;
+      /* Optional background background-color: #f0f0f0;  /* Optional background
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 60px;
+    }
+
+    .image-container_4 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .quote-container_4 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+
+    }
+
+    .image-container_5 img {
+      max-width: 100%;
+      height: 100px;
+    }
+
+    .image-container_5 {
+      height: 800px;
+      rotate: -45deg;
+      background-color: transparent;*/
+
+
+
+
+
+
+
+
 
   </style>
 </head>
@@ -249,74 +411,159 @@
 
 <body>
 
-<div class="top_bar">
-  <h1>
-    Most inspiring quote challenge by Marta Fillol
-  </h1>
-</div>
+  <div class="top_bar">
+    <h1>
+      Most inspiring quote challenge by Marta Fillol
+    </h1>
+  </div>
 
-<!-- FIRST QUOTE -->
+  <!-- FIRST QUOTE -->
 
-<section class="quote-section">
-  <div class="image-container_1">
+  <section class="quote-section">
+    <div class="image-container_1">
+      <a
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
+        <img class="photo1" src="files/Imatge (1).jpeg">
+      </a>
+    </div>
+    <div class="quote-container">
+      <blockquote>
+        "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to
+        them. They went out and happened to things."
+      </blockquote>
+    </div>
+  </section>
+
+
+
+  <!-- Floating Quote Block and butterflies -->
+
+  <div class="floating-quote">
+
+    <div class="butterfly_small">
+      <a
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
+        <img class="photo3"
+          src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Monarch Butterfly Transformation.png">
+      </a>
+    </div>
+
+    <p class="quote-text">
+      "The degree to which a person can grow is directly proportional to the amount of truth they can accept about
+      themselves without running away"
+    </p>
+  </div>
+
+  <div class="butterfly_big">
     <a
       href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
-      <img class="photo1" src="files/Imatge (1).jpeg">
+      <img class="photo3"
+        src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Monarch Butterfly Transformation.png">
     </a>
   </div>
-  <div class="quote-container">
-    <blockquote>
-      "It had long since come to my attention that people of accomplishment rarely sat back and let things happen to
-      them. They went out and happened to things."
-    </blockquote>
-  </div>
-</section>
+
+  <!-- SECOND QUOTE vertical oriented-->
+
+  <section class="quote-section_2">
+
+    <div class="quote-container_2">
+      <blockquote>
+        "DEEP RIVERS <br> RUN QUIET"
+      </blockquote>
+    </div>
+    <div class="image-container_2">
+      <a
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/642/original/Imatge_de_Pinterest_%281%29.jpeg?1739562681">
+        <img class="photo2"
+          src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Imatge de Pinterest (1).jpeg">
+      </a>
+    </div>
+
+  </section>
 
 
+   <!-- Budha image + sunflower-->
 
-
-<!-- Floating Quote Block -->
-
-<div class="floating-quote">
-
-<div class="butterfly_small">
-  <a
-    href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
-    <img class="photo3" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Monarch Butterfly Transformation.png">
-  </a>
-</div>
-  <p class="quote-text">
-    "The degree to which a person can grow is directly proportional to the amount of truth they can accept about themselves without running away"
-  </p>
-</div>
-
-<div class="butterfly_big">
-  <a
-    href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/644/original/Imatge_%281%29.jpeg?1739562700">
-    <img class="photo3" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Monarch Butterfly Transformation.png">
-  </a>
-</div>
-
-<!-- SECOND QUOTE -->
-
-<section class="quote-section_2">
-
-  <div class="quote-container_2">
-    <blockquote>
-      "DEEP RIVERS <br> RUN QUIET"
-    </blockquote>
-  </div>
-  <div class="image-container_2">
+   <div class="kissing_image">
     <a
-      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/642/original/Imatge_de_Pinterest_%281%29.jpeg?1739562681">
-      <img class="photo2" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Imatge de Pinterest (1).jpeg">
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/641/original/__%281%29.jpeg?1739562676">
+      <img class="photo3"
+        src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/_ (1).jpeg">
     </a>
+
+    <div class="sunflower">
+      <a
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/769/original/Sunflower_Watercolor.png?1739621501">
+        <img class="photo3"
+          src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Sunflower Watercolor.png">
+      </a>
+    </div>
+
   </div>
 
-</section>
+
+  <!--LOVE QUOTE-->
+
+
+  <div class="floating-quote_2">
+    <p class="quote-text_2">
+      "True love is born from understanding"
+    </p>
+  </div>
+
+
+    <!-- FINAL QUOTE -->
+
+    <section class="quote-section_4">
+
+      <div class="image-container_4">
+        <a
+          href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/638/original/Pin_image_%282%29.jpeg?1739562660">
+          <img class="photo4" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Pin image (2).jpeg">
+        </a>
+      </div>
+
+      <div class="quote-container_4">
+        <blockquote>
+          "Edit your life frequently and ruthlessly. <br>It's your masterpiece after all."
+        </blockquote>
+      </div>
+
+      <div class="image-container_5">
+        <a
+          href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/639/original/Castle_%281%29.jpeg?1739562665">
+          <img class="photo4" src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/Castle (1).jpeg">
+        </a>
+      </div>
+
+    </section>
 
 
 
+
+
+
+
+  <!-- etc
+
+  <div class="quote-section_3">
+
+    <div class="image-container_3">
+      <a
+        href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/641/original/__%281%29.jpeg?1739562676">
+        <img class="photo4"
+          src="/Users/martafillolbruguera/Documents/Data_projects/Shecodes_challenge/files/_ (1).jpeg">
+      </a>
+    </div>
+    <div class="quote-container_3">
+      <blockquote>
+        "True love is born from understanding"
+      </blockquote>
+    </div>
+  </div>
+
+-->
+  <!--
 
 <div class="container_1">
 
@@ -328,7 +575,6 @@
  SECOND QUOTE
 
 
-<!--
   <h1>
     Most inspiring quote challenge by Marta Fillol
   </h1>
@@ -388,6 +634,7 @@
     </div> -->
 
 </body>
+
 </html>
 
 
